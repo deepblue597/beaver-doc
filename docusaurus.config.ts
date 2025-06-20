@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Beaver Documentation",
   tagline: "A comprehensive guide to Beaver",
-  favicon: "img/favicon.ico",
+  favicon: "img/beaver.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -71,7 +71,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/beaver_social_card.png",
     navbar: {
       title: "Beaver Documentation",
       logo: {
