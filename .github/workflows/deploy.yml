@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
 
@@ -8,26 +10,40 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  test-deploy:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-
+          cache: npm
       - name: Install dependencies
         run: npm ci
-
-      - name: Build website
+      - name: Test build website
         run: npm run build
-
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Deploy to GitHub Pages
         env:
-          GIT_USER: github-actions[bot]
-          USE_SSH: false
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run deploy
+          USE_SSH: true
+        run: |
+          git config --global user.email "iasonas2001@hotmail.com "
+          git config --global user.name "deepblue597"
+          npm ci
+          yarn deploy
