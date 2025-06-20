@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbeaver_doc=self.webpackChunkbeaver_doc||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/beaver-doc/blog","blogTitle":"Blog","authorsListPath":"/beaver-doc/blog/authors"}')}}]);
