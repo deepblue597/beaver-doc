@@ -103,7 +103,3 @@ graph TD
     G --> H[Metrics & predictions published to Kafka]
     G --> I[Live visualization in Dash dashboard]
 ```
-
-## 🤝 Affiliations
-
-![auth_logo](logos/auth_logo.png)
