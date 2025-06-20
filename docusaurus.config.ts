@@ -24,7 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "deepblue597", // Usually your GitHub org/user name.
   projectName: "beaver-doc", // Usually your repo name.
-
+  trailingSlash: true, // Ensure URLs end with a slash for consistency
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
