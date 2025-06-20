@@ -87,19 +87,3 @@ To set it up
 2. Run the docker compose file `docker compose up -d`
 
 3. Your UI will be on `localhost:8080` the brokers at which you can connect are on `localhost:49092` , `localhost:39092` and `localhost:29092`.
-
-## :eyes: Visual Representation
-
-A visual representation of the process that will be built is displayed below:
-
-```mermaid
-graph TD
-    A[User writes .bvr file] --> B[TextX parses .bvr file]
-    B --> C[Python code generation Jinja]
-    C --> D[Generated pipeline script with Quix + River]
-    D --> E[Kafka topics for input/output]
-    E --> F[Quix Streams processes live data]
-    F --> G[Model training & prediction River]
-    G --> H[Metrics & predictions published to Kafka]
-    G --> I[Live visualization in Dash dashboard]
-```
