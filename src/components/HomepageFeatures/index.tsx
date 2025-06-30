@@ -11,12 +11,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'What is Beaver?',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Beaver is a DSL for machine learning in live data. Like a beaver builds a dam, Beaver builds a pipeline for processing data in real-time.
       </>
     ),
   },
@@ -25,18 +24,16 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Beaver is designed to be simple and easy to use, allowing you to focus on the logic of your machine learning models without getting bogged down in complex syntax.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Made on top of industry standard libraries',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Beaver uses top notch libraries like Apache Kafka, River, TextX, Plotly and more to provide a robust and efficient platform for building machine learning pipelines.
       </>
     ),
   },
