@@ -1,4 +1,4 @@
-## Pipeline
+# Pipeline
 
 The **Pipeline** represents the overall system used for data collection and processing, algorithm training, prediction generation, metric usage, and result presentation.  
 It includes the following parameters:
