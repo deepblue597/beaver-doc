@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'What is Beaver?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/beaver_wave.svg').default,
     description: (
       <>
         Beaver is a DSL for machine learning in live data. Like a beaver builds a dam, Beaver builds a pipeline for processing data in real-time.
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/beaver_pc.svg').default,
     description: (
       <>
         Beaver is designed to be simple and easy to use, allowing you to focus on the logic of your machine learning models without getting bogged down in complex syntax.
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Made on top of industry standard libraries',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/beaver_dam.svg').default,
     description: (
       <>
         Beaver uses top notch libraries like Apache Kafka, River, TextX, Plotly and more to provide a robust and efficient platform for building machine learning pipelines.
@@ -42,8 +42,8 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center" >
+        <Svg className={styles.featureSvg} role="img"   />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
