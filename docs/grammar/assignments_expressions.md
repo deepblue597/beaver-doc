@@ -9,4 +9,4 @@ Each factor may optionally have a sign (`+` or `-`) and can be either:
 
 - a number (`NUMBER`),
 - a reference to a variable (`ID`), or
-- a sub-expression enclosed in parentheses, thus allowing
+- a sub-expression enclosed in parentheses, thus allowing recursive composition of expressions.

@@ -50,7 +50,7 @@ The key is always a string and the value is of type `ParamValue`.
 ## ModelRef
 
 ModelRef allows referencing an already defined Model within a parameter.  
-Instead of defining the entire model from scratch, you refer to the model's name
+Instead of defining the entire model from scratch, you refer to the model's name (`name`).
 
 ---
 

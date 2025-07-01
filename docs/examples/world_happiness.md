@@ -213,3 +213,7 @@ pipeline knnRegPipeline {
     metrics = mae , mse , r2
 }
 ```
+
+A complete figure of Beaver Model can be seen below
+
+![world-happines](/img/world-happines.dot.png)

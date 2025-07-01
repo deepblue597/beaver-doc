@@ -17,4 +17,4 @@ Additionally, the structure of a ProcList defines the flow of data through these
 - Separating two or more processors with the symbol `|` tells Beaver that the data will pass sequentially from the first processor, and the output of the first will be used as the input to the second.
 - Separating processors with the symbol `+` means that the data will pass through both processors in parallel.
 
-For more information on using the `+` operator, see the River language manual, section
+For more information on using the `+` operator, see the River language manual, section "Transformer Union".

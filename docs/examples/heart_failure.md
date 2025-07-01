@@ -205,4 +205,6 @@ pipeline logisticPipeline {
 }
 ```
 
-In order to create our python file we run:
+The beaver model figure can be seen below:
+
+![beaver-model](/img/hear-failure.dot.png)

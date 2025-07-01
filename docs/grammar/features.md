@@ -8,4 +8,4 @@ Features are the elements (fields) of the data. Four categories of features are 
   `generated_feature = keep_feature1 * keep_feature2 - keep_feature3`
 - **target_feature:** The target feature of your data.
 
-All of the above categories are optional. If the user does not specify either `keep_features` or `generated_features`, Beaver will retain all features from the
+All of the above categories are optional. If the user does not specify either `keep_features` or `generated_features`, Beaver will retain all features from the data by default.
